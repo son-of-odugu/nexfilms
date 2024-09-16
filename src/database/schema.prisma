@@ -1,0 +1,105 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+// enums
+enum Type {
+  FILM
+  ANIMATION
+}
+
+enum FilmType {
+  MOVIE
+  SERIES
+}
+
+enum Status {
+  RELEASED
+  UNRELEASED
+}
+
+// MODELS
+model Movie {
+  id          String    @id @default(uuid())
+  rating      Float
+  runtime     Int
+  type        Type?     @default(FILM)
+  filmType    FilmType? @default(MOVIE)
+  releaseDate DateTime  @db.Timestamp(6)
+  title       String    @db.VarChar(255)
+  tagline     String    @db.VarChar(200)
+  trailerPath String    @db.VarChar(255)
+  videoPath   String
+  description String
+  posterPath  String    @db.VarChar(255)
+  genre       String[]
+  slug        String    @unique
+  status      Status    @default(UNRELEASED)
+  createdAt   DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt   DateTime? @updatedAt @db.Timestamp(6)
+}
+
+model Series {
+  id          String    @id @default(uuid())
+  rating      Float
+  type        Type?     @default(FILM)
+  filmType    FilmType? @default(SERIES)
+  title       String    @db.VarChar(255)
+  tagline     String    @db.VarChar(200)
+  description String
+  posterPath  String    @db.VarChar(255)
+  status      Status    @default(UNRELEASED)
+  slug        String    @unique
+  seasons     Season[] // A series can have many seasons
+  trailerPath String    @db.VarChar(255)
+  createdAt   DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt   DateTime? @updatedAt @db.Timestamp(6)
+  releaseDate DateTime  @db.Timestamp(6)
+
+  @@unique([slug, title])
+  @@index([slug, title])
+}
+
+model Season {
+  id           String    @id @default(uuid())
+  seasonNumber Int
+  seriesId     String
+  series       Series    @relation(fields: [seriesId], references: [id], onDelete: Cascade) // Many seasons belong to one series
+  episodes     Episode[]
+  slug         String    @unique
+  createdAt    DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt    DateTime? @updatedAt @db.Timestamp(6)
+
+  @@unique([slug, seriesId])
+  @@index([slug, seriesId])
+}
+
+model Episode {
+  id            String    @id @default(uuid())
+  title         String    @db.VarChar(255)
+  episodeNumber Int
+  runtime       Int
+  releaseDate   DateTime  @db.Timestamp(6)
+  description   String
+  videoPath     String
+  slug          String    @unique
+  seasonId      String
+  season        Season    @relation(fields: [seasonId], references: [id], onDelete: Cascade)
+  createdAt     DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt     DateTime? @updatedAt @db.Timestamp(6)
+
+  @@unique([slug, seasonId])
+  @@index([slug, seasonId])
+}

@@ -1,0 +1,165 @@
+[
+  {
+    "rating": 9.5,
+    "type": "FILM",
+    "filmType": "SERIES",
+    "releaseDate": "2008-01-20T00:00:00Z",
+    "title": "Breaking Bad",
+    "tagline": "Change [the] Equation.",
+    "description": "When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
+    "posterPath": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
+    "status": "RELEASED",
+    "trailerPath": "https://www.youtube.com/watch?v=HhesaQXLuRY",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "status": "RELEASED",
+        "episodes": [
+          {
+            "title": "Pilot",
+            "episodeNumber": 1,
+            "releaseDate": "2008-01-20T00:00:00Z",
+            "description": "When an unassuming high school chemistry teacher discovers he has a rare form of cancer, he decides to start a meth lab to support his family.",
+            "videoPath": "https://www.youtube.com/watch?v=1JLUn2DFW4w",
+            "slug": "pilot",
+            "status": "RELEASED",
+            "runtime": 58
+          },
+          {
+            "title": "Cat's in the Bag...",
+            "episodeNumber": 2,
+            "releaseDate": "2008-01-27T00:00:00Z",
+            "description": "Walt and Jesse attempt to tie up loose ends. Skyler becomes suspicious of Walt's strange behavior.",
+            "videoPath": "https://www.youtube.com/watch?v=9q4qzYrHVmI",
+            "slug": "cats-in-the-bag",
+            "status": "RELEASED",
+            "runtime": 48
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "seriesId": "1396",
+        "status": "RELEASED",
+        "episodes": [
+          {
+            "title": "Seven Thirty-Seven",
+            "episodeNumber": 1,
+            "releaseDate": "2009-03-08T00:00:00Z",
+            "description": "Walt and Jesse try to figure a way out of their partnership with Tuco. Hank's investigation into the new drug kingpin in Albuquerque leads him to Walt's doorstep.",
+            "videoPath": "https://www.youtube.com/watch?v=l7V9yRJp_6E",
+            "slug": "seven-thirty-seven",
+            "status": "RELEASED",
+            "runtime": 47
+          },
+          {
+            "title": "Grilled",
+            "episodeNumber": 2,
+            "releaseDate": "2009-03-15T00:00:00Z",
+            "description": "Walt and Jesse are held captive by Tuco, but try to escape. Hank is hot on the trail of his brother-in-law's criminal enterprise.",
+            "videoPath": "https://www.youtube.com/watch?v=2V29BR6n5L4",
+            "slug": "grilled",
+            "status": "RELEASED",
+            "runtime": 48
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rating": 9.3,
+    "type": "FILM",
+    "filmType": "SERIES",
+    "releaseDate": "2011-04-17T00:00:00Z",
+    "title": "Game of Thrones",
+    "tagline": "Winter is Coming.",
+    "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+    "posterPath": "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+    "status": "RELEASED",
+    "trailerPath": "https://www.youtube.com/watch?v=iGp_N3Ir7Do",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "status": "RELEASED",
+        "episodes": [
+          {
+            "title": "Winter Is Coming",
+            "episodeNumber": 1,
+            "releaseDate": "2011-04-17T00:00:00Z",
+            "description": "The series premiere depicts the lives of the noble Stark family who are engaged in a war against the ruling queen's Lannister clan.",
+            "videoPath": "https://www.youtube.com/watch?v=NfQqzm6XWyY",
+            "slug": "winter-is-coming",
+            "status": "RELEASED",
+            "runtime": 62
+          },
+          {
+            "title": "The Kingsroad",
+            "episodeNumber": 2,
+            "releaseDate": "2011-04-24T00:00:00Z",
+            "description": "Jon Snow and Ned Stark travel south to King's Landing with the royal entourage, while Jon's true parentage and the Dragon Queen's growing power continue to influence events in the seven kingdoms.",
+            "videoPath": "https://www.youtube.com/watch?v=0c5g5cW7b5I",
+            "slug": "the-kingsroad",
+            "status": "RELEASED",
+            "runtime": 56
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "status": "RELEASED",
+        "episodes": [
+          {
+            "title": "The North Remembers",
+            "episodeNumber": 1,
+            "releaseDate": "2012-04-01T00:00:00Z",
+            "description": "In the aftermath of the bloodshed, Robb Stark and the Northern Alliance prepare to strike a strategic blow against their Lannister adversaries.",
+            "videoPath": "https://www.youtube.com/watch?v=k8F3UE9qFsg",
+            "slug": "the-north-remembers",
+            "status": "RELEASED",
+            "runtime": 54
+          },
+          {
+            "title": "The Night Lands",
+            "episodeNumber": 2,
+            "releaseDate": "2012-04-08T00:00:00Z",
+            "description": "In the wake of the war, Daenerys and her loyalists experience the travails of their voyage.",
+            "videoPath": "https://www.youtube.com/watch?v=MLUvOt2AWFc",
+            "slug": "the-night-lands",
+            "status": "RELEASED",
+            "runtime": 55
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rating": 8.7,
+    "type": "FILM",
+    "filmType": "SERIES",
+    "releaseDate": "2016-07-15T00:00:00Z",
+    "title": "Stranger Things",
+    "tagline": "Friends don't lie.",
+    "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
+    "posterPath": "https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
+    "status": "RELEASED",
+    "trailerPath": "https://www.youtube.com/watch?v=XWxyRG_tckY",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "status": "RELEASED",
+        "episodes": [
+          {
+            "title": "Chapter One: The Vanishing of Will Byers",
+            "episodeNumber": 1,
+            "releaseDate": "2016-07-15T00:00:00Z",
+            "description": "On his way home from a friend's house, young Will sees something terrifying. Nearby, a sinister secret lurks in the depths of a government lab.",
+            "videoPath": "https://www.youtube.com/watch?v=I1tIaoh4weo",
+            "slug": "chapter-one-the-vanishing-of-will-byers",
+            "status": "RELEASED",
+            "runtime": 48
+          }
+        ]
+      }
+    ]
+  }
+]
